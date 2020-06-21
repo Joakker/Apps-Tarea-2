@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun comenzar(v: View) {
-        val I = Intent("curso.grupoTarea.tarea2.GameBoard")
+        val I = Intent(this,GameBoard1::class.java)
         startActivity(I)
     }
 }
