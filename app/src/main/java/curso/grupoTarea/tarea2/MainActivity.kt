@@ -11,6 +11,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    fun funcionHola(){
+        println("Hola")
+    }
+
     fun comenzar(v: View) {
         val I = Intent("curso.grupoTarea.tarea2.GameBoard")
         startActivity(I)
