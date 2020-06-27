@@ -1,11 +1,9 @@
 package curso.grupoTarea.tarea2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
-import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams
+import androidx.appcompat.app.AppCompatActivity
 
 class GameBoard1 : AppCompatActivity() {
     private lateinit var moves:Map<Int,Map<Int,Int>>
@@ -51,9 +49,26 @@ class GameBoard1 : AppCompatActivity() {
         )
     }
 
+    private fun isOn(view: View):Boolean {
+        return view.background.constantState == getDrawable(R.drawable.roundbutton_on)?.constantState
+    }
+
     fun attendButton(view: View) {
-        if (this.cachedButton == 0) {
-            this.cachedButton = view.id
+        if (isOn(view)) {
+            if (cachedButton != 0) {
+                findViewById<Button>(cachedButton).background = getDrawable(R.drawable.roundbutton_on)
+            }
+            cachedButton = view.id
+            view.background = getDrawable(R.drawable.roundbutton_selected)
+        } else if (cachedButton != 0){
+            if (!isOn(view)) {
+                moves[cachedButton]?.get(view.id)?.let {
+                    findViewById<Button>(view.id).background = getDrawable(R.drawable.roundbutton_on)
+                    findViewById<Button>(it).background = getDrawable(R.drawable.roundbutton_off)
+                    findViewById<Button>(cachedButton).background = getDrawable(R.drawable.roundbutton_off)
+                    cachedButton = 0
+                }
+            }
         }
     }
 }
