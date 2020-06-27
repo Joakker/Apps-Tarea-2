@@ -6,7 +6,15 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class GameBoard1 : AppCompatActivity() {
+    /*
+    * Mapa de los movimientos que puede efectuar cada
+    * casilla
+    */
     private lateinit var moves:Map<Int,Map<Int,Int>>
+
+    /*
+    * Id de la pieza que vamos a mover
+    */
     private var cachedButton:Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +35,7 @@ class GameBoard1 : AppCompatActivity() {
             R.id.b12 to mapOf(R.id.b10 to R.id.b11, R.id.b26 to R.id.b19),
             R.id.b13 to mapOf(R.id.b11 to R.id.b12, R.id.b27 to R.id.b20),
             R.id.b14 to mapOf(R.id.b16 to R.id.b15),
-            R.id.b15 to mapOf(R.id.b18 to R.id.b17),
+            R.id.b15 to mapOf(R.id.b17 to R.id.b16),
             R.id.b16 to mapOf(R.id.b4 to R.id.b9, R.id.b14 to R.id.b15, R.id.b18 to R.id.b17, R.id.b28 to R.id.b23),
             R.id.b17 to mapOf(R.id.b5 to R.id.b10, R.id.b15 to R.id.b16, R.id.b19 to R.id.b18, R.id.b29 to R.id.b24),
             R.id.b18 to mapOf(R.id.b6 to R.id.b11, R.id.b16 to R.id.b17, R.id.b20 to R.id.b19, R.id.b30 to R.id.b25),
@@ -49,10 +57,18 @@ class GameBoard1 : AppCompatActivity() {
         )
     }
 
+    /*
+    * Función auxiliadora que determina si el botón
+    * que la invocó está encendido o no
+    * */
     private fun isOn(view: View):Boolean {
         return view.background.constantState == getDrawable(R.drawable.roundbutton_on)?.constantState
     }
 
+    /**
+     * Aquí reside la lógica del juego. Determina si
+     * el movimiento es válido y actualiza las casillas
+     */
     fun attendButton(view: View) {
         if (isOn(view)) {
             if (cachedButton != 0) {
