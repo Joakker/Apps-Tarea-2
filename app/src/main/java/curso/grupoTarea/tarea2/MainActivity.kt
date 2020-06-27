@@ -11,12 +11,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun funcionHola(){
-        println("Hola")
-    }
-
     fun comenzar(v: View) {
-        val I = Intent(this,GameBoard1::class.java)
-        startActivity(I)
+        val i = Intent(this,GameBoard1::class.java)
+        startActivity(i)
     }
 }

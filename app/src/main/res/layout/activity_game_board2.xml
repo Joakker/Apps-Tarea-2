@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-    android:id="@+id/botonn8"
+    android:id="@+id/b8"
     android:layout_width="55dp"
     android:layout_height="55dp"
     android:layout_gravity="center"
@@ -19,13 +19,13 @@
     app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn6"
+        android:id="@+id/b6"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="270"
         app:layout_constraintCircleRadius="120dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -33,13 +33,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn5"
+        android:id="@+id/b5"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="30"
         app:layout_constraintCircleRadius="60dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -47,13 +47,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn9"
+        android:id="@+id/b9"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="90"
         app:layout_constraintCircleRadius="60dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -61,13 +61,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn13"
+        android:id="@+id/b13"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="150"
         app:layout_constraintCircleRadius="60dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -75,13 +75,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn12"
+        android:id="@+id/b12"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="210"
         app:layout_constraintCircleRadius="60dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -89,13 +89,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn7"
+        android:id="@+id/b7"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="270"
         app:layout_constraintCircleRadius="60dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -103,13 +103,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn4"
+        android:id="@+id/b4"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="330"
         app:layout_constraintCircleRadius="60dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -117,13 +117,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn3"
+        android:id="@+id/b3"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="30"
         app:layout_constraintCircleRadius="120dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -131,13 +131,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn10"
+        android:id="@+id/b10"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="90"
         app:layout_constraintCircleRadius="120dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -145,13 +145,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn16"
+        android:id="@+id/b16"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="150"
         app:layout_constraintCircleRadius="120dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -159,13 +159,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn15"
+        android:id="@+id/b15"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="210"
         app:layout_constraintCircleRadius="120dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -173,13 +173,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn1"
+        android:id="@+id/b1"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="330"
         app:layout_constraintCircleRadius="120dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -187,13 +187,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn2"
+        android:id="@+id/b2"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="0"
         app:layout_constraintCircleRadius="104dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -201,13 +201,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/botonn14"
+        android:id="@+id/b14"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="120"
         app:layout_constraintCircleRadius="104dp"
         app:layout_constraintLeft_toRightOf="parent"
@@ -215,13 +215,13 @@
         app:layout_constraintTop_toBottomOf="parent" />
 
     <Button
-        android:id="@+id/boton15"
+        android:id="@+id/b11"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/roundbutton_on"
         app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintCircle="@id/botonn8"
+        app:layout_constraintCircle="@id/b8"
         app:layout_constraintCircleAngle="240"
         app:layout_constraintCircleRadius="104dp"
         app:layout_constraintLeft_toRightOf="parent"
