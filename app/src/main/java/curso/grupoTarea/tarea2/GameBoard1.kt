@@ -77,7 +77,7 @@ class GameBoard1 : AppCompatActivity() {
             cachedButton = view.id
             view.background = getDrawable(R.drawable.roundbutton_selected)
         } else if (cachedButton != 0){
-            if (!isOn(view)) {
+            if (!isOn(view) && isOn(findViewById<Button>(moves[cachedButton]!![view.id]!!))) {
                 moves[cachedButton]?.get(view.id)?.let {
                     findViewById<Button>(view.id).background = getDrawable(R.drawable.roundbutton_on)
                     findViewById<Button>(it).background = getDrawable(R.drawable.roundbutton_off)
