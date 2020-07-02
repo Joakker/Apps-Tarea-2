@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun comenzar(v: View) {
-        val i = Intent(this,GameBoard1::class.java)
+        val i = Intent(this,LevelSelector::class.java)
         startActivity(i)
     }
 
