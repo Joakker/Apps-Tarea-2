@@ -3,4 +3,5 @@
     <string name="title">Tarea 2\nSenku</string>
     <string name="credits">Autor: Joaquín León Ulloa\nCarlos Hernandez Sacaan</string>
     <string name="start">Comenzar</string>
+    <string name="illegal">Wait, that\'s Illegal</string>
 </resources>
