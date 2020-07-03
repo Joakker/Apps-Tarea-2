@@ -8,6 +8,7 @@
     <string name="flower">Flower</string>
     <string name="level_select">Seleccionar nivel</string>
     <string name="help">Ayuda</string>
+    <string name="Reiniciar">Reiniciar</string>
     <!-- strings creditos-->
     <string name="creditosTitulo">Creditos</string>
     <string name="creditosContenido1">Concepto Original por:</string>

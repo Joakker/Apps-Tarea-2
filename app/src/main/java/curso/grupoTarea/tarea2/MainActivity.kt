@@ -26,4 +26,5 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this, Creditos::class.java)
         startActivity(i)
     }
+
 }
