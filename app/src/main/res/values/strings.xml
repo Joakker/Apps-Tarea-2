@@ -17,6 +17,7 @@
     <string name="creditosNombres2">Carlos Hernandez\nJoaquin Leon</string>
     <!-- strings ayuda -->
     <string name="ayudaTitulo">Como jugar</string>
+    <string name="restart">Reiniciar</string>
 
 
 </resources>
