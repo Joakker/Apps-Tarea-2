@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ayuda"></activity>
+        <activity android:name=".Ayuda"/>
         <activity android:name=".Creditos" />
-        <activity
-            android:name=".GameBoard1"
-            android:screenOrientation="portrait" />
+        <activity android:name=".GameBoardCross"/>
+        <activity android:name=".GameBoardFlower"/>
+        <activity android:name=".LevelSelector"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Tarea 2 - Senku</string>
     <string name="title">Tarea 2\nSenku</string>
-    <string name="credits">Autor: Joaquín León Ulloa\nCarlos Hernandez Sacaan</string>
+    <string name="credits">Autores: Joaquín León Ulloa\nCarlos Hernandez Sacaan</string>
     <string name="start">Comenzar</string>
     <string name="illegal">Wait, that\'s Illegal</string>
+    <string name="cross">Cruz</string>
+    <string name="flower">Flower</string>
+    <string name="level_select">Seleccionar nivel</string>
+    <string name="help">Ayuda</string>
     <!-- strings creditos-->
     <string name="creditosTitulo">Creditos</string>
     <string name="creditosContenido1">Concepto Original por:</string>

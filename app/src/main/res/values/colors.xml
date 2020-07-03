@@ -3,6 +3,6 @@
     <color name="colorPrimary">#3B4252</color>
     <color name="colorPrimaryDark">#2E3440</color>
     <color name="colorAccent">#D8DEE9</color>
-    <color name="pegColor">#D08770</color>
+    <color name="colorButton">#D08770</color>
     <color name="defaultBackground">#000832</color>
 </resources>

@@ -1,7 +1,7 @@
 package curso.grupoTarea.tarea2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
@@ -17,7 +17,7 @@ class Ayuda : AppCompatActivity() {
         adapter.addFragment(Fragmento3() , " A jugar! ")
         viewPager.adapter = adapter
         viewPager.background = getDrawable(R.color.defaultBackground)
-        tabs.setupWithViewPager(viewPager)
+        //tabs.setupWithViewPager(viewPager)
 
     }
 
