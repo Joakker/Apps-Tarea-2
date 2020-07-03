@@ -16,4 +16,9 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this,GameBoard1::class.java)
         startActivity(i)
     }
+
+    fun ayuda(v: View) {
+        val i = Intent(this, Ayuda::class.java)
+        startActivity(i)
+    }
 }

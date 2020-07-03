@@ -5,9 +5,9 @@
     android:id="@+id/gameBoard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:background="@color/defaultBackground"
     android:gravity="center"
-    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal"
     tools:context="curso.grupoTarea.tarea2.GameBoard1">
 
     <androidx.constraintlayout.widget.ConstraintLayout

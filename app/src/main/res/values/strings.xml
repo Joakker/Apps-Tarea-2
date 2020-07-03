@@ -4,4 +4,14 @@
     <string name="credits">Autor: Joaquín León Ulloa\nCarlos Hernandez Sacaan</string>
     <string name="start">Comenzar</string>
     <string name="illegal">Wait, that\'s Illegal</string>
+    <!-- strings creditos-->
+    <string name="creditosTitulo">Creditos</string>
+    <string name="creditosContenido1">Concepto Original por:</string>
+    <string name="creditosContenido2">Programadores:</string>
+    <string name="creditosNombres1">Mario Medina</string>
+    <string name="creditosNombres2">Carlos Hernandez\nJoaquin Leon</string>
+    <!-- strings ayuda -->
+    <string name="ayudaTitulo">Como jugar</string>
+
+
 </resources>
