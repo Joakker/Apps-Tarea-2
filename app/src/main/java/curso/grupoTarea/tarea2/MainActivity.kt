@@ -21,4 +21,9 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this, Ayuda::class.java)
         startActivity(i)
     }
+
+    fun creditos(v: View) {
+        val i = Intent(this, Creditos::class.java)
+        startActivity(i)
+    }
 }

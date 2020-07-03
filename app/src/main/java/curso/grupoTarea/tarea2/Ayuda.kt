@@ -17,7 +17,7 @@ class Ayuda : AppCompatActivity() {
         adapter.addFragment(Fragmento3() , " A jugar! ")
         viewPager.adapter = adapter
         viewPager.background = getDrawable(R.color.defaultBackground)
-        //tabs.setupWithViewPager(viewPager)
+        tabs.setupWithViewPager(viewPager)
 
     }
 
