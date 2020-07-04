@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ayuda"/>
+        <activity android:name=".EndState"/>
+        <activity android:name=".Ayuda" />
         <activity android:name=".Creditos" />
-        <activity android:name=".GameBoardCross"/>
-        <activity android:name=".GameBoardFlower"/>
-        <activity android:name=".LevelSelector"/>
+        <activity android:name=".GameBoardCross" />
+        <activity android:name=".GameBoardFlower" />
+        <activity android:name=".Win"/>
+        <activity android:name=".Lose"/>
+        <activity android:name=".Victory"/>
+        <activity android:name=".LevelSelector" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

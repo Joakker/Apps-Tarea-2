@@ -1,5 +1,6 @@
 package curso.grupoTarea.tarea2
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -168,6 +169,7 @@ open class BoardLayout: AppCompatActivity() {
      */
     private fun isOn(view: View):Boolean {
         return view.background.constantState == getDrawable(R.drawable.roundbutton_on)?.constantState
+                || view.background.constantState == getDrawable(R.drawable.roundbutton_selected)?.constantState
     }
 
     /**
@@ -260,11 +262,13 @@ open class BoardLayout: AppCompatActivity() {
         }
 
         if (checkEnd()) {
-            Log.i("ButtonStates", "Won")
-            when {
-                isVictory -> Log.i("ButtonStates", "It was a victory!")
-                movesLeft -> Log.i("ButtonStates", "No more moves!")
-            }
+            Log.i("ButtonStates", "Entering end of game state")
+            val i = Intent(this, when {
+                isVictory -> Victory::class.java
+                movesLeft -> Lose::class.java
+                else -> Win::class.java
+            })
+            startActivity(i)
         }
     }
 }
