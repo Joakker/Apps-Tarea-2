@@ -264,9 +264,9 @@ open class BoardLayout: AppCompatActivity() {
         if (checkEnd()) {
             Log.i("ButtonStates", "Entering end of game state")
             val i = Intent(this, when {
-                isVictory -> Victory::class.java
-                movesLeft -> Lose::class.java
-                else -> Win::class.java
+                isVictory   -> Victory::class.java
+                movesLeft   -> Lose::class.java
+                else        -> Win::class.java
             })
             startActivity(i)
         }
