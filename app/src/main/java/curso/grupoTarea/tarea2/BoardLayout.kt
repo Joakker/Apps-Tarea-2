@@ -145,7 +145,16 @@ open class BoardLayout: AppCompatActivity() {
      */
     private var isVictory:Boolean = false
 
+    /**
+     * Bandera utilizada por checkEnd para ver si quedan movimientos posibles
+     */
+    private var movesLeft:Boolean = false
 
+    /**
+     * Método extensión de Map
+     *
+     * @return  el id del botón entre cachedButton y target, o null si no existe
+     */
     private fun Map<Int,Map<Int,Int>>.getMiddleButton(target:Int): Int? {
         return this[cachedButton]?.get(target)
     }
@@ -206,9 +215,20 @@ open class BoardLayout: AppCompatActivity() {
      */
     private fun checkEnd():Boolean {
         val remaining = moves.keys.filter { isOn(findViewById(it)) }
-        return when (remaining.size) {
-            1 -> {
+        val possibles = remaining.filter {
+            moves[it]?.any {
+                entry ->
+                !isOn(findViewById(entry.key)) && isOn(findViewById(entry.value))
+            }!!
+        }
+        Log.i("ButtonStates", "$possibles")
+        return when {
+            remaining.size == 1 -> {
                 isVictory = (remaining[0] == winButton)
+                true
+            }
+            possibles.isEmpty() -> {
+                movesLeft = true
                 true
             }
             else -> false
@@ -241,6 +261,10 @@ open class BoardLayout: AppCompatActivity() {
 
         if (checkEnd()) {
             Log.i("ButtonStates", "Won")
+            when {
+                isVictory -> Log.i("ButtonStates", "It was a victory!")
+                movesLeft -> Log.i("ButtonStates", "No more moves!")
+            }
         }
     }
 }
